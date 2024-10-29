@@ -1,9 +1,14 @@
 import { Stack } from "expo-router";
 
-export default function RootLayout() {
+const Layout = () => {
   return (
     <Stack>
-      <Stack.Screen name="index" />
+      {/* Define your stack screens here if needed */}
+      <Stack.Screen name="index" options={{ title: "Home" }} />
+      <Stack.Screen name="userProfile" options={{ title: "User Profile" }} />
+      <Stack.Screen name="userForm" options={{ title: "User Form" }} />
     </Stack>
   );
-}
+};
+
+export default Layout;
